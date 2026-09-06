@@ -12,10 +12,10 @@ lines=5
 #     print()
 
 
-# for i in range(lines):
-#     for j in range(lines-i):
-#         print("*",end="")
-#     print()
+for i in range(lines):
+    for j in range(lines-i):
+        print("*",end="")
+    print()
 
 
 # for i in range(lines):
@@ -98,7 +98,7 @@ lines=5
 #     print()
 
 
-for i in range(lines):
-    for j in range(lines-i):
-        print(i+1,end="")
-    print()    
+# for i in range(lines):
+#     for j in range(lines-i):
+#         print(i+1,end="")
+#     print()    

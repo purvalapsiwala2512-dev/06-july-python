@@ -1,0 +1,8 @@
+f = open("lyrics.txt","w")
+f.write("Ha ha ha zotata otatata")
+f.close()
+f = open("lyrics.txt")
+print(f.tell())
+data=f.read(10)
+print(f.tell())
+f.close()

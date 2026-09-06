@@ -40,7 +40,7 @@
 #     return execute
 
 
-
+# @add
 # @mul
 # def calc(*a):
 #     print("***calc***")
@@ -51,12 +51,20 @@
 def digit(or_fun):
     def execute(data):
         if str(data).isdigit():
-            or_fun
+            or_fun(data)
         else:
-            print("invalid data")    
+            print("invalid data")
+    return execute          
 
-    
-@digit
+def alpha(or_fun):
+    def execute(data):
+        if str(data).isalpha():
+            or_fun(data)
+        else:
+            print("invalid data")
+    return execute          
+
+@alpha
 def get(data):
     print(data)
 

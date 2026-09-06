@@ -39,7 +39,7 @@
 #     data = f.read()
 #     print(data)
 
-# with open("test.txt",'r') as f :
+# with open("test.txt","r") as f :
 #     f.seek(10)
 #     print(f.tell())
 #     data = f.read()
