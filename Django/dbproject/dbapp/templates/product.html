@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Form</title>
+</head>
+
+<body>
+
+    <h1>Add Product</h1>
+    <span class="text-success">{{msg}}</spam>
+    <form action="{%url 'product'%}" method="POST">
+        {%csrf_token%}
+
+        <label>Product Name:</label>
+        <input type="text" name="name">
+        <br><br>
+
+        <label>Price:</label>
+        <input type="number" name="price">
+        <br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="qty">
+        <br><br>
+
+        <button type="submit">Add Product</button>
+
+    </form>
+
+    {% if msg %}
+        <h3>{{ msg }}</h3>
+    {% endif %}
+
+</body>
+</html>
